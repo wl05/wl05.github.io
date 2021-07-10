@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>git 命令总结 | wl05 记录</title>
+    <meta name="generator" content="VuePress 1.8.1">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/assets/css/0.styles.67a5141f.css" as="style"><link rel="preload" href="/assets/js/app.996e5f38.js" as="script"><link rel="preload" href="/assets/js/2.d8adcea9.js" as="script"><link rel="preload" href="/assets/js/29.f4974cbc.js" as="script"><link rel="prefetch" href="/assets/js/10.bba5b183.js"><link rel="prefetch" href="/assets/js/11.24bc87b9.js"><link rel="prefetch" href="/assets/js/12.ba5f4f88.js"><link rel="prefetch" href="/assets/js/13.77fb7832.js"><link rel="prefetch" href="/assets/js/14.c0f09825.js"><link rel="prefetch" href="/assets/js/15.6c238c07.js"><link rel="prefetch" href="/assets/js/16.20a0fc88.js"><link rel="prefetch" href="/assets/js/17.08c84521.js"><link rel="prefetch" href="/assets/js/18.2d037916.js"><link rel="prefetch" href="/assets/js/19.efff374c.js"><link rel="prefetch" href="/assets/js/20.fedcffb3.js"><link rel="prefetch" href="/assets/js/21.56557195.js"><link rel="prefetch" href="/assets/js/22.af63d214.js"><link rel="prefetch" href="/assets/js/23.d58c9429.js"><link rel="prefetch" href="/assets/js/24.c3c8c6f7.js"><link rel="prefetch" href="/assets/js/25.f25f39b6.js"><link rel="prefetch" href="/assets/js/26.8ad68c94.js"><link rel="prefetch" href="/assets/js/27.d76fe4b7.js"><link rel="prefetch" href="/assets/js/28.4e9696ad.js"><link rel="prefetch" href="/assets/js/3.8420da90.js"><link rel="prefetch" href="/assets/js/30.192b3cc5.js"><link rel="prefetch" href="/assets/js/31.5ce98e74.js"><link rel="prefetch" href="/assets/js/32.f6e10cd8.js"><link rel="prefetch" href="/assets/js/33.67e22dfe.js"><link rel="prefetch" href="/assets/js/34.d20eb79f.js"><link rel="prefetch" href="/assets/js/35.970dba76.js"><link rel="prefetch" href="/assets/js/36.ba8cf43f.js"><link rel="prefetch" href="/assets/js/37.5c135a60.js"><link rel="prefetch" href="/assets/js/38.74ac758b.js"><link rel="prefetch" href="/assets/js/39.f6eb0ebc.js"><link rel="prefetch" href="/assets/js/4.48506eaf.js"><link rel="prefetch" href="/assets/js/40.ba8b5974.js"><link rel="prefetch" href="/assets/js/41.3e898e12.js"><link rel="prefetch" href="/assets/js/42.542a18cb.js"><link rel="prefetch" href="/assets/js/43.8269b65c.js"><link rel="prefetch" href="/assets/js/44.ef0b0972.js"><link rel="prefetch" href="/assets/js/45.364deea0.js"><link rel="prefetch" href="/assets/js/46.eb18b40b.js"><link rel="prefetch" href="/assets/js/47.46895d9f.js"><link rel="prefetch" href="/assets/js/48.5c7eece9.js"><link rel="prefetch" href="/assets/js/49.02b5d4fa.js"><link rel="prefetch" href="/assets/js/5.4100ddc3.js"><link rel="prefetch" href="/assets/js/50.5bf2e49a.js"><link rel="prefetch" href="/assets/js/51.90a6c544.js"><link rel="prefetch" href="/assets/js/52.d77d1c81.js"><link rel="prefetch" href="/assets/js/53.d5337c64.js"><link rel="prefetch" href="/assets/js/54.253efa76.js"><link rel="prefetch" href="/assets/js/55.5e37d914.js"><link rel="prefetch" href="/assets/js/56.ae682a3f.js"><link rel="prefetch" href="/assets/js/57.eb4a5262.js"><link rel="prefetch" href="/assets/js/58.536aeb24.js"><link rel="prefetch" href="/assets/js/6.22dbf7e7.js"><link rel="prefetch" href="/assets/js/7.bdc74965.js"><link rel="prefetch" href="/assets/js/8.f1d80c3c.js"><link rel="prefetch" href="/assets/js/9.e36964bd.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.67a5141f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">wl05 记录</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/tech/" class="nav-link router-link-active">
+  技术
+</a></div><div class="nav-item"><a href="/hobby/" class="nav-link">
+  爱好
+</a></div><div class="nav-item"><a href="/life/" class="nav-link">
+  生活
+</a></div><div class="nav-item"><a href="/read/" class="nav-link">
+  读书
+</a></div> <a href="https://github.com/wl05/ant-site" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/tech/" class="nav-link router-link-active">
+  技术
+</a></div><div class="nav-item"><a href="/hobby/" class="nav-link">
+  爱好
+</a></div><div class="nav-item"><a href="/life/" class="nav-link">
+  生活
+</a></div><div class="nav-item"><a href="/read/" class="nav-link">
+  读书
+</a></div> <a href="https://github.com/wl05/ant-site" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>CSS</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/tech/css/" class="sidebar-link">TODO</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Javascript</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/tech/javascript/" class="sidebar-link">TODO</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Typescript</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/tech/typescript/basic-type/" class="sidebar-link">Typescript 基础类型</a></li><li><a href="/tech/typescript/type-manipulation/generics.html" class="sidebar-link">泛型</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>浏览器</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/tech/browser/1-chrome-browser-architecture/" class="sidebar-link">浏览器篇（一）-Chrome浏览器架构</a></li><li><a href="/tech/browser/2-what-happens-in-navigation/" class="sidebar-link">浏览器篇（二）- 页面导航过程发生了什么</a></li><li><a href="/tech/browser/3-inner-workings-of-a-renderer-process/" class="sidebar-link">浏览器篇（三）- 渲染进程的内部工作过程</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>前端性能优化</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/tech/performance/" class="sidebar-link">TODO</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>前端框架</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/tech/framework/" class="sidebar-link">TODO</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>设计模式</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/tech/design-patterns/" class="sidebar-link">TODO</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>git</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/tech/git/git-base.html" aria-current="page" class="active sidebar-link">git 命令总结</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/tech/git/git-base.html#git-cherry-pick" class="sidebar-link">git cherry-pick</a></li><li class="sidebar-sub-header"><a href="/tech/git/git-base.html#批量处理冲突" class="sidebar-link">批量处理冲突</a></li><li class="sidebar-sub-header"><a href="/tech/git/git-base.html#git-reset" class="sidebar-link">git reset</a></li><li class="sidebar-sub-header"><a href="/tech/git/git-base.html#git-revert" class="sidebar-link">git revert</a></li><li class="sidebar-sub-header"><a href="/tech/git/git-base.html#git-stash" class="sidebar-link">git stash</a></li><li class="sidebar-sub-header"><a href="/tech/git/git-base.html#参考" class="sidebar-link">参考</a></li></ul></li><li><a href="/tech/git/git-rebase/" class="sidebar-link">git rebase 详解</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>算法</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/tech/algorithm/leetcode.html" class="sidebar-link">做过的算法题集锦</a></li><li><a href="/tech/algorithm/sort-algorithm/bubble-sort.html" class="sidebar-link">冒泡算法</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>docker</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/tech/docker/docker-introduction/" class="sidebar-link">Docker 浅尝辄止</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>其他</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/tech/other/abort-request.html" class="sidebar-link">终止异步任务</a></li><li><a href="/tech/other/abort-request.html" class="sidebar-link">终止异步任务</a></li><li><a href="/tech/other/google-search.html" class="sidebar-link">google 搜索技巧</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="git-命令总结"><a href="#git-命令总结" class="header-anchor">#</a> git 命令总结</h1> <h2 id="git-cherry-pick"><a href="#git-cherry-pick" class="header-anchor">#</a> git cherry-pick</h2> <ul><li>基本用法</li></ul> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># cherry-pick 单条commit</span>
+<span class="token function">git</span> cherry-pick <span class="token operator">&lt;</span>commitHash<span class="token operator">&gt;</span>
+<span class="token comment"># cherry-pick feature分支的最新一次提交</span>
+<span class="token function">git</span> cherry-pick <span class="token operator">&lt;</span>feature 分支<span class="token operator">&gt;</span>
+<span class="token comment"># cherry-pick 多个commit</span>
+<span class="token function">git</span> cherry-pick <span class="token operator">&lt;</span>HashA<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>HashB<span class="token operator">&gt;</span>
+<span class="token comment"># cherry-pick 连续的多个commit，这个命令不包含commit A</span>
+<span class="token function">git</span> cherry-pick A<span class="token punctuation">..</span>B 
+<span class="token comment"># cherry-pick 连续的多个commit，这个命令包含commit A</span>
+<span class="token function">git</span> cherry-pick A^<span class="token punctuation">..</span>B 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><ul><li>cherry-pick 有冲突解决</li></ul> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 解决冲突后执行执行</span>
+<span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span>
+<span class="token comment"># 然后</span>
+<span class="token function">git</span> cherry-pick --continue
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><ul><li>丢弃修改</li></ul> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">git</span> cherry-pick --abort
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="批量处理冲突"><a href="#批量处理冲突" class="header-anchor">#</a> 批量处理冲突</h2> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 采用当前的</span>
+$ <span class="token function">git</span> checkout --ours filepath
+<span class="token comment"># 采用传入的</span>
+$ <span class="token function">git</span> checkout --theirs filepath
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h2 id="git-reset"><a href="#git-reset" class="header-anchor">#</a> git reset</h2> <p>例如有 A -&gt; B -&gt; C -&gt; D 次提交，当前在D这个commit，现在想回退到B这个commit，使用命令：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ <span class="token function">git</span> reset --hard B
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>这里要特别注意的是这个操作是回退到B,意思就是执行完这个操作以后B之后的提交都没了。
+如果远程分支是领先于reset过后的本地分支，此时push是会报错的。这里只有使用git push -f 覆盖远程分支提交，
+<em>所以如果你不确定是否会覆盖别人的提交，最好不要执行这个命令。</em></p> <h2 id="git-revert"><a href="#git-revert" class="header-anchor">#</a> git revert</h2> <h3 id="revert普通提交"><a href="#revert普通提交" class="header-anchor">#</a> revert普通提交</h3> <p>例如有 A -&gt; B -&gt; C -&gt; D 次提交，当前在D这个commit，现在想回退B这个commit，使用命令：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ <span class="token function">git</span> revert B
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>执行完命令后提交记录变成： A -&gt; B -&gt; C -&gt; D -&gt; E， E会保存D，E 的修改撤销B的修改，
+这里就能看出 <code>git revert</code>和<code>git reset</code>的区别了。</p> <h3 id="revert合并"><a href="#revert合并" class="header-anchor">#</a> revert合并</h3> <p>相对于revert 普通提交，revert merge提交会稍微麻烦些。</p> <p>我们来看一个例子：</p> <p>这里将dev合并到了master生成了一个merge提交，</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>A -&gt; B -&gt; C -&gt; D --  merge  (master)
+      \            /
+      A'  --&gt;  B'  (dev)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>然后又有一个feature分支做完了一些开发，合并到了master分支，
+master分支部署后，发现在merge那个点引入了bug，现在想撤销merge那个commit，
+但是又不想影响其他的commit，此时revert就可以派上用场了。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>A -&gt; B -&gt; C -&gt; D --  merge -&gt; E -&gt; F(master)
+     \ \            /                   /
+      \ A'  --&gt;  B' -&gt; D' -&gt; E'(dev)   /
+       \                              /
+        A'' --&gt; B'' --- D''（feature）/ 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>我们先执行git log 查看一下merge 的commit id，</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>commit 3fd41a0027820066a4f07876ee3905ef5704d98b
+Merge: 8506600c9 4cffdcd01
+Author: ant
+Date:   Wed Mar 10 18:59:43 2021 +0800
+
+    Merge branch 'dev' into master
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>这里merge 的 commit id是 <code>3fd41a</code>,执行 <code>git revert 3fd41a</code>,
+然后报错了:</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>git revert faulty merge
+error: Commit faulty merge is a merge but no -m option was given.
+fatal: revert failed
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>报错原因是git 不知道保留哪一个分支的修改，是保留<code>dev</code>还是<code>master</code>呢？ 怎么区分？
+这里我们需要使用-m参数指定<code>parant number</code>，-m后面的值可以<code>1</code>或者<code>2</code>，看上面的<code>merge log</code> <code>Merge: 8506600c9 4cffdcd01</code> 这里<code>8506600c9</code>是<code>master</code>的<code>commit id</code>,
+<code>4cffdcd01</code> 是<code>dev</code>的<code>commit id</code>, 这里<code>1</code>，<code>2</code>分别就对应<code>8506600c9,4cffdcd01</code>,也就是分别对应<code>master、dev</code></p> <p>这里我们想保留master分支上的修改所以我们执行命令：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>$ git revert 3fd41a -m 1
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>执行完后的分支</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>A -&gt; B -&gt; C -&gt; D --  merge -&gt; E --------&gt; F ---- G(master)
+     \ \            /                   /
+      \ A'  --&gt;  B' -&gt; D' -&gt; E'(dev)   /
+       \                              /
+        A'' --&gt; B'' --- D''（feature）/ 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>此时生成一个新的<code>commit G</code>，这里<code>G</code>是包含<code>E</code>，<code>F</code>不包含<code>merge</code>的。</p> <h2 id="git-stash"><a href="#git-stash" class="header-anchor">#</a> git stash</h2> <p>git stash 使用场景，比如正在feature分支上开发，然后遇到一个bug需要从master 切出分支修改，
+此时我们功能开发到一半不想commit，这个时候就可以使用git stash来操作了。</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 将工作区和暂存区的进度保存下来</span>
+<span class="token function">git</span> stash 
+
+<span class="token comment"># 查看保存的进度列表</span>
+<span class="token function">git</span> stash list
+
+<span class="token comment"># 将进度恢复到工作区</span>
+<span class="token function">git</span> stash pop
+
+<span class="token comment"># 将原来在工作区的改动恢复到工作区，将原来在暂存区的改动恢复到暂存区</span>
+<span class="token function">git</span> stash pop <span class="token punctuation">[</span>–index<span class="token punctuation">]</span>
+
+<span class="token comment"># 恢复指定的进度到工作区</span>
+<span class="token function">git</span> stash pop <span class="token punctuation">[</span>stash_id<span class="token punctuation">]</span>
+
+<span class="token comment"># 和git stash pop使用方式一样，区别是git stash pop执行完后会删除当前的保存的进度，而git stash apply不会</span>
+<span class="token function">git</span> stash apply
+
+<span class="token comment"># 删除指定的进度</span>
+<span class="token function">git</span> stash drop <span class="token punctuation">[</span>stash_id<span class="token punctuation">]</span>
+
+<span class="token comment"># 删除保存的所有进度</span>
+<span class="token function">git</span> stash <span class="token function">clear</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><h2 id="参考"><a href="#参考" class="header-anchor">#</a> 参考</h2> <ol><li><a href="http://www.ruanyifeng.com/blog/2020/04/git-cherry-pick.html" target="_blank" rel="noopener noreferrer">cherry-pick<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://juejin.cn/post/6844903647390744589#heading-3" target="_blank" rel="noopener noreferrer">revert<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://blog.csdn.net/yxlshk/article/details/79944535" target="_blank" rel="noopener noreferrer">revert<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ol></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最后更新于:</span> <span class="time">6/20/2021, 8:46:20 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/tech/design-patterns/" class="prev">
+        TODO
+      </a></span> <span class="next"><a href="/tech/git/git-rebase/">
+        git rebase 详解
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.996e5f38.js" defer></script><script src="/assets/js/2.d8adcea9.js" defer></script><script src="/assets/js/29.f4974cbc.js" defer></script>
+  </body>
+</html>
